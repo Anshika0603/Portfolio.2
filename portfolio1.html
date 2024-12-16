@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image:url(image1.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+
+
+/* --------------about------------- */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* .about-col-1{
+    flex-basis: 35%;
+}*/
+.about-col-1 {
+    flex-basis: 35%; 
+}
+
+.about-col-1 img {
+    width: 100%; 
+    border-radius: 25px; 
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px; /* Adjust icon size */
+    color: black; /* Icon color */
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* LinkedIn color on hover */
+}
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+    
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+/* .btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+} */
+.btn.btn2 {
+    display: inline-block;
+    background: #ff004f;
+    color: white; 
+    padding: 15px 30px; 
+    font-size: 18px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Optional: Add a hover effect */
+.btn.btn2:hover {
+    background: #ff0066; /* Darker shade of red on hover */
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+}
+    </style>
+
+      
+</head>
+<body>
+    <span id="header">
+        <span class="container">
+            <nav>
+                <img src="image.jpg" class="logo" >
+                <ul>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <!-- <li><a href="#">Service</a></li> -->
+                </ul>
+            </nav>
+        </span>
+    </span>
+    <span>
+        <span class="header-text">
+            <h1>Hi, I'm Anshika Bisht</h1>
+        </span>
+    </span>
+
+    <!-- -------------- About Section ------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image4.jpg" alt="image" height="400" width="300" style="margin-top: auto;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! My name is Anshika Bisht and I hail from KIET group of institute, having just kickstarted my journey as a B.Tech first-year student in Computer Science Engineering  I am excited to lay a strong foundation in the core principles of engineering and develop deeper knowledge into the expansive field of technology.</p>
+                    <p>I want to gain hands-on experience by embarking on different projects and following different coursework while exploring various technologies. I'm still in the early stages of my studies, but I am already enjoying it and have a solid interest in programming, robotics, art, electronics, etc., and I expect to develop this much deeper as I go through my studies.</p>
+                    <p>I also think a curious mind, creativity, and collaboration are what will unlock success in the tech world, and I look forward to working on projects, meeting others with the same passion, and helping out the community.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>C</span></li>
+                            <li><span>EXCEL</span></li>
+                            <li><span>WORD</span></li>
+                            <li><span>POWERPOINT</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>10th Standard</span>
+                                <p>School name: <strong>Modern Academy Senior Secondary School</strong>
+                                <br>Board: <strong>CBSE</strong><br>
+                                Year of passing: <strong>2022</strong><br>
+                                Percentage: <strong>92.6%</strong>
+                                </p>
+                            </li>
+                            <li><span>12th Standard</span>
+                                <p>School name: <strong>Modern Academy Senior Secondary School</strong>
+                                <br>Board: <strong>CBSE</strong><br>
+                                Year of passing: <strong>2024</strong><br>
+                                Percentage: <strong>93.4%</strong>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------contact--------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact </h1>
+                <p><i class="fa-solid fa-paper-plane"></i>anshika.2428cse240@kiet.edu</p>
+                <p><i class="fa-solid fa-phone"></i>88001XXXXX</p>
+                <!-- <p><i class="sub-title"></i> <a href="https://www.linkedin.com/in/anshika-bisht-b6a809327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin</a></p> -->
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy; 2024 Anshika Bisht <i class="fa-solid fa-face-smile"></i></p>
+    </div>
+ </div>
+
+    <script>
+        function opentab(event, tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            // Remove active-link and active-tab classes
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Add active-link class to the clicked tab
+            event.currentTarget.classList.add("active-link");
+
+            // Show the corresponding tab content
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
